@@ -18,6 +18,7 @@ h2 {
 .logo-text {
   margin: 0;
   letter-spacing: 5px;
+  line-height: 25px;
 }
 
 h3 {
@@ -25,7 +26,7 @@ h3 {
   text-transform: capitalize;
   line-height: 70px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 27px;
   margin-bottom: 0px;
   letter-spacing: 5px;
 }
@@ -34,9 +35,45 @@ span {
   background: #d7d7d7;
 }
 
-img {
+#header-image {
   width: 90%;
-  height: 400px;
+  max-height: 400px;
   margin: auto;
   display: block;
+}
+
+#about-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 622px;
+  grid-gap: 20px;
+  margin: 20px auto;
+}
+
+#about-container div {
+  /* background: green; */
+  text-align: center;
+}
+
+#about-container div:nth-child(odd) {
+  align-self: center;
+  justify-self: center;
+}
+
+#about-container div p {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: capitalize;
+  font-size: 35px;
+  letter-spacing: 5px;
+  margin-top: 110px
+}
+
+#diagonal{
+transform: rotate(-05deg);
+margin-top: 50px;
+}
+
+#about-container div blockquote p {
+  font-size: 20px;
+  line-height: 30px;
 }
