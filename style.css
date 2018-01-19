@@ -3,7 +3,7 @@ body {
 }
 
 #wrapper {
-  margin: 0 40px;
+  margin: 0 3.6%;
   font-family: 'Noto Sans', sans-serif;
 }
 
@@ -49,16 +49,15 @@ span {
 #about-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-auto-rows: 622px;
   grid-gap: 20px;
-  margin: 1.7% auto;
+  margin: 11% auto;
 }
 
 #about-container div {
   text-align: center;
 }
 
-#about-container div:nth-child(odd) {
+#portrait {
   align-self: center;
   justify-self: center;
 }
@@ -68,17 +67,18 @@ span {
   text-transform: capitalize;
   font-size: 35px;
   letter-spacing: 5px;
-  margin-top: 14%;
 }
 
 #diagonal{
 transform: rotate(-05deg);
 margin-top: 6%;
+margin-left: 10%;
 }
 
 #about-container div blockquote p {
   font-size: 20px;
   line-height: 30px;
+  margin-top: 12%;
 }
 
 #awards h2 {
@@ -96,8 +96,8 @@ margin-top: 6%;
 #awards-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-auto-rows: 540px;
   grid-gap: 20px;
+  margin-bottom: 9%;
 }
 
 #awards-list {
@@ -132,3 +132,129 @@ li {
   font-size: 40px;
   padding: 0 50px;
 }
+
+
+ /* ******** MEDIA QUERIES ********** */
+
+      /* Mobile */
+
+@media screen and (max-width:599px) {
+
+  .logo-text {
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 18px;
+  }
+
+  #logo p {
+    font-size: 15px;
+  }
+
+  #logo h2 {
+    padding-left: 110px;
+  }
+
+  h3{
+    font-size: 18px;
+    line-height: 35px;
+  }
+
+  #about-container {
+    display: block;
+  }
+
+  #portrait img{
+    width: 50%;
+  }
+
+  #about-container div p {
+    font-size: 15px;
+      letter-spacing: 5px;
+      margin-bottom: 15%;
+      }
+
+    #about-container div blockquote p {
+      font-size: 10px;
+      line-height: 15px;
+      margin-top: 17%;
+      margin-bottom: 5%;
+      }
+
+      #about-container div blockquote footer {
+        font-size: 12px;
+      }
+
+      #awards {
+        margin-top: 60px;
+      }
+
+      #awards h2 {
+        font-size: 20px;
+        }
+
+      #awards p {
+        font-size: 13px;
+        letter-spacing: 2px;
+      }
+
+      #awards-container {
+        display: block;
+      }
+
+      #awards-list li {
+        font-size: 16px;
+      }
+
+      #sketch img {
+        width: 100%;
+      }
+
+      #footer-container p {
+        font-size: 16px;
+      }
+}
+
+     /* Tablets */
+
+@media screen and (min-width:600px) and (max-width:768px) {
+
+  h3{
+  font-size: 25px;
+  line-height: 35px;
+    }
+
+  #portrait img {
+    width: 150%;
+    }
+
+  #about {
+    align-self: center;
+    margin-left: 20%;
+    }
+
+  #about-container div p {
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-bottom: 15%;
+    }
+
+  #about-container div blockquote p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 17%;
+    }
+
+  #awards h2 {
+    font-size: 25px;
+    }
+
+  #awards-list {
+    font-size: 17px;
+    line-height: 21px;
+    }
+
+  #sketch img {
+    width: 110%;
+    }
+
+ }
